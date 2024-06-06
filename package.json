@@ -4,8 +4,9 @@
   "description": "A browser extension to display IP addresses and clear browsing data.",
   "main": "background.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "echo \"No build step required\""
   },
   "author": "Your Name",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {}
 }
