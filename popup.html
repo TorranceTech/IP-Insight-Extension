@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IP Insight</title> <!-- Substitua pelo nome escolhido -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>IP Insight Extension</h1> <!-- Substitua pelo nome escolhido -->
+    </div>
+
+    <div class="section">
+        <h2>Your IP Address:</h2>
+        <div id="ip">Loading...</div>
+    </div>
+
+    <div class="section">
+        <h2>Visited Site's IP Address:</h2>
+        <div id="site-ip">Loading...</div>
+    </div>
+
+    <div class="section">
+        <h2>Clean Data</h2>
+        <div class="checkbox-container">
+            <label><input type="checkbox" name="cache"> Cache</label>
+            <label><input type="checkbox" name="cookies"> Cookies</label>
+            <label><input type="checkbox" name="history"> History</label>
+            <label><input type="checkbox" name="formData"> Form Data</label>
+        </div>
+        <div class="checkbox-container">
+            <label><input type="checkbox" name="localStorage"> Local Storage</label>
+            <label><input type="checkbox" name="indexedDB"> Indexed DB</label>
+        </div>
+        <button id="toggleSelect">Select/Deselect All</button>
+        <button id="toggleDarkMode">Toggle Dark Mode</button>
+        <button id="clearSelected">Clear Selected</button>
+    </div>
+
+    <div class="section">
+        <h2>Support Us</h2>
+        <a href="https://www.paypal.me/torrancetech" target="_blank" class="donate-button">Donate via PayPal</a>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
