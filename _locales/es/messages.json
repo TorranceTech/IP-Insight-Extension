@@ -1,0 +1,50 @@
+{
+  "appName": {
+    "message": "Extensión de IP Insight"
+  },
+  "appDescription": {
+    "message": "Una herramienta simple para mostrar tu dirección IP y la dirección IP de los sitios que visitas."
+  },
+  "yourIPAddress": {
+    "message": "Tu Dirección IP:"
+  },
+  "visitedSiteIPAddress": {
+    "message": "Dirección IP del sitio visitado:"
+  },
+  "cleanData": {
+    "message": "Limpiar Datos"
+  },
+  "cache": {
+    "message": "Cache"
+  },
+  "cookies": {
+    "message": "Cookies"
+  },
+  "history": {
+    "message": "Historial"
+  },
+  "formData": {
+    "message": "Datos de Formulario"
+  },
+  "localStorage": {
+    "message": "Almacenamiento Local"
+  },
+  "indexedDB": {
+    "message": "Indexed DB"
+  },
+  "selectDeselectAll": {
+    "message": "Seleccionar/Deseleccionar Todo"
+  },
+  "toggleDarkMode": {
+    "message": "Modo Oscuro"
+  },
+  "clearSelected": {
+    "message": "Limpiar Seleccionados"
+  },
+  "supportUs": {
+    "message": "Apóyanos"
+  },
+  "donateViaPayPal": {
+    "message": "Donar via PayPal"
+  }
+}
