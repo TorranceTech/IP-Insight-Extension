@@ -1,0 +1,11 @@
+{
+  "name": "ip-insight-extension",
+  "version": "1.0.0",
+  "description": "A browser extension to display IP addresses and clear browsing data.",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Your Name",
+  "license": "ISC"
+}
