@@ -2,6 +2,11 @@
 
 IP Insight Extension is a simple tool that displays your IP address and the IP address of the sites you visit. Additionally, the extension allows you to clear browsing data such as cache, cookies, history, form data, local storage, and Indexed DB. With a dark mode for easier viewing and a PayPal donation button to support development, IP Insight Extension is an essential addition to your browser.
 
+
+![Screenshot 2024-06-06 at 6 30 46 AM](https://github.com/TorranceTech/IP-Insight-Extension/assets/170806445/4bce82ea-565b-4270-8691-916272545ed8)
+![Screenshot 2024-06-06 at 6 29 54 AM](https://github.com/TorranceTech/IP-Insight-Extension/assets/170806445/09cdde87-89e0-4e38-a3a5-ad5c057382bc)
+
+
 ## Features
 
 - Displays your public IP address.
@@ -11,8 +16,6 @@ IP Insight Extension is a simple tool that displays your IP address and the IP a
 - PayPal donation button to support development.
 
 ## Installation
-![Screenshot 2024-06-06 at 6 30 46 AM](https://github.com/TorranceTech/IP-Insight-Extension/assets/170806445/4bce82ea-565b-4270-8691-916272545ed8)
-![Screenshot 2024-06-06 at 6 29 54 AM](https://github.com/TorranceTech/IP-Insight-Extension/assets/170806445/09cdde87-89e0-4e38-a3a5-ad5c057382bc)
 
 ### Add the Extension to Firefox
 
