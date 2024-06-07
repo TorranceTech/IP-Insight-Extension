@@ -11,6 +11,8 @@ IP Insight Extension is a simple tool that displays your IP address and the IP a
 - PayPal donation button to support development.
 
 ## Installation
+![Screenshot 2024-06-06 at 6 30 46 AM](https://github.com/TorranceTech/IP-Insight-Extension/assets/170806445/4bce82ea-565b-4270-8691-916272545ed8)
+![Screenshot 2024-06-06 at 6 29 54 AM](https://github.com/TorranceTech/IP-Insight-Extension/assets/170806445/09cdde87-89e0-4e38-a3a5-ad5c057382bc)
 
 ### Add the Extension to Firefox
 
@@ -46,6 +48,8 @@ Donate via PayPal
 
 To support multiple languages, create a `_locales` folder in your project directory. Inside `_locales`, create a folder for each language using the language code (e.g., `en` for English, `es` for Spanish). Inside each language folder, create a `messages.json` file.
 
-#### File Structure
+#### File Structure![Screenshot 2024-06-06 at 6 30 46 AM](https://github.com/TorranceTech/IP-Insight-Extension/assets/170806445/0812894e-1bea-430a-9cbd-c054cce7057c)
+
 
 ```
+![Screenshot 2024-06-06 at 6 19 14 AM](https://github.com/TorranceTech/IP-Insight-Extension/assets/170806445/de926c24-332a-439f-81a7-12e273d8ce7c)
