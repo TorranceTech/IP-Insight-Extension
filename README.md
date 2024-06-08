@@ -50,7 +50,7 @@ Donate via PayPal
 ### Adding Localization
 
 To support multiple languages, create a `_locales` folder in your project directory. Inside `_locales`, create a folder for each language using the language code (e.g., `en` for English, `es` for Spanish). Inside each language folder, create a `messages.json` file.
-
+```
 #### File Structure![Screenshot 2024-06-06 at 6 30 46 AM](https://github.com/TorranceTech/IP-Insight-Extension/assets/170806445/0812894e-1bea-430a-9cbd-c054cce7057c)
 
 
