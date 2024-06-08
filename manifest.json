@@ -1,8 +1,10 @@
 {
   "manifest_version": 2,
-  "name": "__MSG_appName__",
-  "version": "1.1",
-  "description": "__MSG_appDescription__",
+  "name": "IP Insight Extension",
+  "description": "A browser extension to display IP addresses and clear browsing data.",
+  "version": "1.2",  // Incremented version number
+  "author": "TorranceTech",
+  "homepage_url": "https://github.com/torrancetech/IP-Insight-Extension",
   "default_locale": "en",
   "permissions": [
     "webRequest",
@@ -10,8 +12,8 @@
     "webNavigation",
     "<all_urls>",
     "tabs",
-    "browsingData",
     "storage",
+    "browsingData",
     "notifications"
   ],
   "background": {
@@ -21,14 +23,25 @@
   "browser_action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "icons/icon-16.png",
-      "48": "icons/icon-48.png",
-      "128": "icons/icon-128.png"
+      "16": "icons/new-icon-16.png",
+      "48": "icons/new-icon-48.png",
+      "128": "icons/new-icon-128.png"
     }
   },
   "icons": {
-    "16": "icons/icon-16.png",
-    "48": "icons/icon-48.png",
-    "128": "icons/icon-128.png"
+    "16": "icons/new-icon-16.png",
+    "48": "icons/new-icon-48.png",
+    "128": "icons/new-icon-128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{e551cca9-a75b-4436-a484-146f4ae26575}",
+      "strict_min_version": "79.0"
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": false,
+    "open_in_tab": true
   }
 }
