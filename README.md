@@ -35,7 +35,15 @@ Go to the Firefox add-ons page and search for "IP Insight Extension" or click th
 
 Install IP Insight Extension <!-- Add the add-on link when available -->
 
-Support
+## Changelog
+
+Version 1.2
+- Fixed the issue with displaying the visited site's IP address.
+- Added logic to resolve CNAMEs.
+- User interface improvements and bug fixes.
+
+
+## Support
 
 If you encounter any issues or have suggestions, please open an issue on the GitHub repository.
 
