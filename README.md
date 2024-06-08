@@ -1,4 +1,3 @@
-Sure, I'll integrate the updated installation instructions into your existing `README.md` while keeping the original content and screenshots intact.
 
 ### Updated `README.md`
 
