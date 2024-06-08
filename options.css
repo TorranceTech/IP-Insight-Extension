@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    /* Adicionando uma altura mínima para garantir uma visualização agradável em todas as resoluções */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o formulário verticalmente */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título para separação clara */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    /* Adicionando sombra para um efeito sutil */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas para o formulário */
+    background: white; /* Fundo branco para destacar o formulário no fundo cinza */
+}
+
+label {
+    margin-bottom: 10px;
+    display: block; /* Garante que a label ocupe toda a linha para melhor acessibilidade */
+    cursor: pointer; /* Indica que o label é interativo */
+}
+
+button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transição suave para o hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor mais escura no hover para feedback ao usuário */
+}

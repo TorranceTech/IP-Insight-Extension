@@ -1,59 +1,52 @@
+// Define as configurações padrão
 var defaultSettings = {
   reload: true,
   notification: true,
   dataTypes: ["cache"]
 };
 
+// Função para verificar e atualizar as configurações armazenadas
 function checkStoredSettings(storedSettings) {
-  if (!storedSettings.notification || !storedSettings.reload || !storedSettings.dataTypes) {
-    browser.storage.local.set(defaultSettings);
-  }
+  const updatedSettings = {...defaultSettings, ...storedSettings};
+  browser.storage.local.set(updatedSettings);
 }
 
-const gettingStoredSettings = browser.storage.local.get();
-gettingStoredSettings.then(checkStoredSettings, onError);
+// Inicia o processo de verificação das configurações armazenadas
+browser.storage.local.get().then(checkStoredSettings, onError);
 
+// Função para limpar os dados de navegação com base nas configurações
 function clearCache(storedSettings) {
-  const reload = storedSettings.reload;
-  const notification = storedSettings.notification;
-
-  function getTypes(selectedTypes) {
-    var dataTypes = {};
-    for (var item of selectedTypes) {
-      dataTypes[item] = true;
-    }
-    return dataTypes;
-  }
-
-  const dataTypes = getTypes(storedSettings.dataTypes);
-
-  function onCleared() {
-    if (reload) {
-      browser.tabs.reload();
+    const dataTypes = {};
+    for (let type of storedSettings.dataTypes) {
+        dataTypes[type] = true;
     }
 
-    if (notification) {
-      var dataTypesString = Object.keys(dataTypes).join(", ");
-      browser.notifications.create({
-        "type": "basic",
-        "title": "Clear Data",
-        "message": `Cleared ${dataTypesString}`,
-        "iconUrl": browser.runtime.getURL('/icons/icon-48.png')
-      }).then(function() {});
-    }
-  }
+    console.log('Data types to clear:', dataTypes);
 
-  console.log('Data types to clear:', dataTypes);
-  browser.browsingData.remove({}, dataTypes).then(onCleared, onError);
+    browser.browsingData.remove({}, dataTypes).then(() => {
+        if (storedSettings.reload) {
+            browser.tabs.reload();
+        }
+        if (storedSettings.notification) {
+            browser.notifications.create({
+                "type": "basic",
+                "title": "Clear Data",
+                "message": `Cleared: ${Object.keys(dataTypes).join(", ")}`,
+                "iconUrl": browser.runtime.getURL('/icons/icon-48.png')
+            });
+        }
+    }).catch(onError);
 }
 
+// Função para lidar com erros
 function onError(error) {
-  console.error(error);
+  console.error('Error:', error);
 }
 
+// Listener para mensagens enviadas para limpar dados
 browser.runtime.onMessage.addListener((message) => {
   if (message.type === 'clearCache') {
-    const gettingStoredSettings = browser.storage.local.get();
-    gettingStoredSettings.then(clearCache, onError);
+    browser.storage.local.get().then(clearCache, onError);
   }
 });
+

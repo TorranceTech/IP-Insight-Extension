@@ -5,9 +5,9 @@ IP Insight Extension is a simple tool that displays your IP address and the IP a
 ## Features
 
 - Displays your public IP address.
-- Displays the IP address of the sites you visit.
+- Displays the IP address of the sites you visit, including resolving CNAMEs.
 - Options to clear cache, cookies, history, form data, local storage, and Indexed DB.
-- Dark mode for comfortable viewing.
+- Dark mode for comfortable viewing, with preferences saved.
 - PayPal donation button to support development.
 
 ## Installation
@@ -17,6 +17,7 @@ IP Insight Extension is a simple tool that displays your IP address and the IP a
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/torrancetech/IP-Insight-Extension.git
+
 
 ## Load the Extension:
 
