@@ -52,8 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     }
 
-    const primaryAPI = 'https://ipinfo.io/json?token=709d1e6ff8b4dd';
-    const backupAPI = 'https://ipgeolocation.abstractapi.com/v1/?api_key=580fefff964843d29ace169cf28648ff';
+    const primaryAPI = `https://ipinfo.io/json?token=${process.env.PRIMARY_API_KEY}`;
+    const backupAPI = `https://ipgeolocation.abstractapi.com/v1/?api_key=${process.env.BACKUP_API_KEY}`;
 
     fetchIP(primaryAPI, 'ip', backupAPI, true);
 
