@@ -43,16 +43,13 @@ Donations
 
 If you find this extension useful, consider making a donation to support ongoing development.
 
-Donate via PayPal
+* Donate via PayPal
 
-```
+
 
 ### Adding Localization
 
 To support multiple languages, create a `_locales` folder in your project directory. Inside `_locales`, create a folder for each language using the language code (e.g., `en` for English, `es` for Spanish). Inside each language folder, create a `messages.json` file.
-```
+
 #### File Structure![Screenshot 2024-06-06 at 6 30 46 AM](https://github.com/TorranceTech/IP-Insight-Extension/assets/170806445/0812894e-1bea-430a-9cbd-c054cce7057c)
-
-
-```
 ![Screenshot 2024-06-06 at 6 19 14 AM](https://github.com/TorranceTech/IP-Insight-Extension/assets/170806445/de926c24-332a-439f-81a7-12e273d8ce7c)
