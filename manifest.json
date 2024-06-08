@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "IP Insight Extension",
   "description": "A browser extension to display IP addresses and clear browsing data.",
-  "version": "1.2.2",
+  "version": "1.2.4",
   "author": "TorranceTech",
   "homepage_url": "https://github.com/torrancetech/IP-Insight-Extension",
   "default_locale": "en",

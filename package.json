@@ -1,6 +1,6 @@
 {
   "name": "ip-insight-extension",
-  "version": "1.2.2",
+  "version": "1.2.4",
   "description": "A browser extension to display IP addresses and clear browsing data.",
   "main": "background.js",
   "scripts": {
