@@ -84,16 +84,6 @@ If you find this extension useful, consider making a donation to support ongoing
 To support multiple languages, create a `_locales` folder in your project directory. Inside `_locales`, create a folder for each language using the language code (e.g., `en` for English, `es` for Spanish). Inside each language folder, create a `messages.json` file.
 
 ![Screenshot 2024-06-06 at 6 19 14 AM](https://github.com/TorranceTech/IP-Insight-Extension/assets/170806445/de926c24-332a-439f-81a7-12e273d8ce7c)
-```
 
-### Atualize o README no GitHub
 
-1. **Abra o README.md no seu editor de texto preferido e substitua o conteúdo pelo acima.**
-2. **Adicione e comite o arquivo atualizado:**
-
-```bash
-git add README.md
-git commit -m "Update README.md with installation and usage instructions in English"
-git push origin main
-```
 
