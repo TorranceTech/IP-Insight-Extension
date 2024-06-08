@@ -1,3 +1,11 @@
 # Ignore o arquivo de variáveis de ambiente
 .env
+
+# Ignore a pasta node_modules
 node_modules/
+
+# Ignore arquivos ZIP gerados
+IP-Insight-Extension-v*.zip
+
+# Ignore arquivos do sistema
+.DS_Store
