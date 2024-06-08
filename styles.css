@@ -35,6 +35,7 @@ body.dark-mode, html.dark-mode {
 .checkbox-container label {
     flex: 1 1 45%;
     margin-bottom: 10px;
+    color: inherit; /* Ensure text color inherits from body for theme consistency */
 }
 
 button, .donate-button {
@@ -49,6 +50,7 @@ button, .donate-button {
     text-align: center;
     display: block;
     text-decoration: none;
+    transition: background-color 0.3s, opacity 0.3s; /* Smooth transition for hover effects */
 }
 
 button:hover, .donate-button:hover {
@@ -66,4 +68,13 @@ button:hover, .donate-button:hover {
 .donate-button:hover {
     background-color: #ffaa00;
     opacity: 0.8;
+}
+
+/* Additional styles for inputs and checkboxes to ensure visibility in dark mode */
+input[type="checkbox"] {
+    accent-color: #007BFF; /* Adjust checkbox color to match the button color in light mode */
+}
+
+body.dark-mode input[type="checkbox"] {
+    accent-color: #FFCC00; /* Change checkbox color in dark mode for better visibility */
 }
