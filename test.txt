@@ -1,0 +1,1 @@
+Testando as novas configurações de Git
