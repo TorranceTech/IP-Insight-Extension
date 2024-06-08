@@ -54,10 +54,13 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     }
 
-    // URL da API IPinfo para buscar o IP do usuário
-    const primaryAPI = 'https://ipinfo.io/json?token=709d1e6ff8b4dd';
-    // URL da API Abstract como backup
-    const backupAPI = 'https://ipgeolocation.abstractapi.com/v1/?api_key=580fefff964843d29ace169cf28648ff';
+    // Carregar variáveis de ambiente (somente necessário se você não tiver configurado globalmente)
+    require('dotenv').config();
+
+    // URL da API IPinfo para buscar o IP do usuário, usando variável de ambiente
+    const primaryAPI = `https://ipinfo.io/json?token=${process.env.PRIMARY_API_KEY}`;
+    // URL da API Abstract como backup, usando variável de ambiente
+    const backupAPI = `https://ipgeolocation.abstractapi.com/v1/?api_key=${process.env.BACKUP_API_KEY}`;
 
     // Busca o IP do usuário
     fetchIP(primaryAPI, 'ip', backupAPI, true);
