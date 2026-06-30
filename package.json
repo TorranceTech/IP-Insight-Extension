@@ -9,7 +9,7 @@
   "author": "TorranceTech",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.24.7",
+    "@babel/core": "^8.0.1",
     "@babel/preset-env": "^7.24.7",
     "babel-loader": "^9.1.3",
     "dotenv-webpack": "^8.1.0",
