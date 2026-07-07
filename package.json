@@ -13,7 +13,7 @@
     "@babel/preset-env": "^8.0.2",
     "babel-loader": "^10.1.1",
     "dotenv-webpack": "^8.1.0",
-    "webpack": "^5.91.0",
+    "webpack": "^5.108.4",
     "webpack-cli": "^5.1.4"
   }
 }
